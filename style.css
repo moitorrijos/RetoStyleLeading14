@@ -1,0 +1,57 @@
+:root{
+    --main-bg-color: #191919;
+    --line-color: #E08027;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.lupa {
+    border: 35px solid var(--line-color);
+    background-color: var(--line-color);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 0;
+    position: relative;
+}
+
+.esquina {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    border: 30px solid var(--line-color);
+}
+
+.mango {
+    width: 100px;
+    height: 90px;
+    background-color: var(--line-color);
+    position: absolute;
+    transform: rotate(45deg);
+    top: 180px;
+    left: 165px;
+}
+
+.ojo {
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-bg-color);
+    border: 20px solid var(--line-color);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 64px;
+    top: 75px;
+}
